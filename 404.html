@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--"Meta Date"-->
+    <!--"Favicon"-->
+    <link rel="shortcut icon" sizes="32x32" href="src/images/favicon/favicon32x32.svg">
+    <link rel="apple-touch-icon-precomposed" sizes="16x16" href="src/images/favicon/favicon16x16.svg">
+    <title>Nutritionist_404</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/icomoon.css">
+</head>
+
+<body>
+    <div class="wraper">
+        <!--"header start"-->
+        <header id="header">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+                <a class="navbar-brand" href="index.html#header">
+                    <img class="logoHeader" src="./src/images/header/logoApple.svg" alt="There is logo">
+                </a>
+                <!--кнопка "три рисочки"-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg"
+                    aria-labelledby="navbarOffcanvasLgLabel">
+                    <div class="offcanvas-header">
+                        <img class="offcanvas-title" id="offcanvasNavbarLabel" src="./src/images/header/logoApple.svg"
+                            alt="There is logo">
+                        <!--кнопка-закриття БМ "хрестик"-->
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-between flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html#aboutMe">Про мене</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page"
+                                    href="index.html#aboutTheMenuForTheDay">Рекомендоване
+                                    меню</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html#training">Тренування</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page"
+                                    href="index.html#theResultsOfMyClients">Відгуки</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html#contacts">Контакти</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <img src="./src/images/header/shareVector.svg" alt="Tjere is share-link">
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item"
+                                            href="https://t.me/share/url?url=https://nutritionist.intita.com/" target="_blank">
+                                            <img class="icon-telegram" src="./src/images/icon/telegram.svg"
+                                                alt="There is icon-telegram"></a>
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="https://www.facebook.com/sharer/sharer.php?u=https://nutritionist.intita.com/"
+                                            target="_blank">
+                                            <img class="icon-facebook" src="./src/images/icon/facebook.svg"
+                                                alt="There is icon-facebook"></a>
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="https://www.linkedin.com/shareArticle?mini=true&url=https://nutritionist.intita.com"
+                                            target="_blank">
+                                            <img class="icon-linkedin" src="./src/images/icon/linkedin.svg"
+                                                alt="There is icon-linkedin"></a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="switchLanguage">
+                            <a class="ukrlanguage" href="404">Ua /</a>
+                            <a class="englanguage" href="404-en">En</a>
+                        </div>
+                        <div class="dropdown-title">
+                            <p>Поділитись</p>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!--"header end"-->
+
+        <!--"404 start-->
+        <section id="error">
+            <div class="row content-404">
+                <div class="col-xs-12 col-sm-6 text-block">
+                    <div class="text-center">
+                        <h2 class="title">Ой!</h2>
+                        <div class="nomber">404</div>
+                        <div class="item-text">Сторінки, яку Ви шукали,<br> не існує.</div>
+                        <a href="index">
+                            <button class="button404">
+                                <div class="boreder-button404">
+                                    <div class="button-text">На головну</div>
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 image-block">
+                    <img src="./src/images/404/imageDesktop.jpg" alt="There are fruits">
+                </div>
+            </div>
+            <div class="row content-footer fixed-bottom">
+                <a href="developers">
+                    <img src="./src/images/footer/Logo.svg" alt="There is logo footer">
+                    <p class="text-link">Розроблено студентами <br> Вінницької ІТ-Академії 2024</p>
+                </a>
+            </div>
+        </section>
+        <!--"404 end"-->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--"Meta Date"-->
+    <meta name="author" content="Нутриціолог Аліна Причепа">
+    <meta name="title" content="Нутриціолог Аліна Причепа">
+    <meta name="description" content="Аліна Причепа – персональний нутриціолог">
+    <meta name="keywords"
+        content="Аліна Причепа, нутриціолог, корисна їжа, nutritionist, Alina Prichepa, програма тренувань, онлайн тренування, healthy food">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nutritionist.intita.com/">
+    <meta property="og:title" content="Нутриціолог Аліна Причепа">
+    <meta property="og:description"
+        content="Персональний нутриціолог – це не просто фахівець по правильному і збалансованому харчуванню, це наставник, ментор, твій куратор та помічник у покращенні здоров’я та зовнішнього вигляду">
+    <meta property="og:image" content="https://thetheater.intita.com/src/images/main/main-foto.webp">
+    <!--"Favicon"-->
+    <link rel="shortcut icon" sizes="32x32" href="src/images/favicon/favicon32x32.svg">
+    <link rel="apple-touch-icon-precomposed" sizes="16x16" href="src/images/favicon/favicon16x16.svg">
+    <title>Nutritionist</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--<link rel="stylesheet" href="src/css/icomoon.css">-->
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/icomoon.css">
+</head>
+
+<body>
+    <!--"loader start"-->
+    <div id="loader">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!--"loader end"-->
+
+    <div class="wraper">
+        <!--"header start"-->
+        <header id="header">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+                <a class="navbar-brand" href="#header">
+                    <img class="logoHeader" src="./src/images/header/logoApple.svg" alt="There is logo">
+                </a>
+                <!--кнопка "три рисочки"-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg"
+                    aria-labelledby="navbarOffcanvasLgLabel">
+                    <div class="offcanvas-header">
+                        <img class="offcanvas-title" id="offcanvasNavbarLabel" src="./src/images/header/logoApple.svg"
+                            alt="There is logo">
+
+                        <!--кнопка-закриття БМ "хрестик"-->
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-between flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#aboutMe">Про мене</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#aboutTheMenuForTheDay">Рекомендоване
+                                    меню</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#training">Тренування</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#theResultsOfMyClients">Відгуки</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#contacts">Контакти</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <img src="./src/images/header/shareVector.svg" alt="Tjere is share-link">
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" target="_blank"
+                                            href="https://t.me/share/url?url=https://nutritionist.intita.com/">
+                                            <img class="icon-telegram" src="./src/images/icon/telegram.svg"
+                                                alt="There is icon-telegram"></a>
+                                    </li>
+                                    <li><a class="dropdown-item" target="_blank"
+                                            href="https://www.facebook.com/sharer/sharer.php?u=https://nutritionist.intita.com/"
+                                            target="_blank">
+                                            <img class="icon-facebook" src="./src/images/icon/facebook.svg"
+                                                alt="There is icon-facebook"></a>
+                                    </li>
+                                    <li><a class="dropdown-item" target="_blank"
+                                            href="https://www.linkedin.com/shareArticle?mini=true&url=https://nutritionist.intita.com"
+                                            target="_blank">
+                                            <img class="icon-linkedin" src="./src/images/icon/linkedin.svg"
+                                                alt="There is icon-linkedin"></a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="switchLanguage">
+                            <a class="ukrlanguage" href="index">Ua /</a>
+                            <a class="englanguage" href="index-en">En</a>
+                        </div>
+                        <div class="dropdown-title">
+                            <p>Поділитись</p>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!--"header end"-->
+
+        <!--"MainNutritionist start"-->
+        <section id="mainNutritionist">
+            <div class="background">
+                <div class="block-main">
+                    <div class="title">
+                        <div class="title-block">
+                            <h1>Аліна<br> Причепа</h1>
+                        </div>
+                        <div class="title-nutritionist">
+                            <p>нутриціолог</p>
+                        </div>
+                        <div class="border-button display">
+                            <button class="button" onclick="openForm()">Записатися на консультацію</button>
+                        </div>
+                    </div>
+                    <div class="main">
+                        <div class="foto">
+                            <img class="letMeKnow" src="./src/images/main/letMeKnow.svg" alt="letMeKnow.svg">
+                            <img class="main-foto" src="./src/images/main/main-foto.webp" alt="main-foto.svg">
+                        </div>
+                        <div class="icomoon">
+                            <a href="https://t.me/share/url?url=https://nutritionist.intita.com/" target="_blank">
+                                <div class="telegram">
+                                    <img src="./src/images/icon/telegram.svg" alt="telegram.png">
+                                </div>
+                            </a>
+                            <a href="https://www.facebook.com/alinaprichepa" target="_blank">
+                                <div class="viber">
+                                    <img class="viber-iconommon" src="./src/images/icon/facebook.svg"
+                                        alt="facebook.svg">
+                                </div>
+                            </a>
+                            <a href="https://www.instagram.com/alina_prichepa/" target="_blank">
+                                <div class="instagram">
+                                    <img src="./src/images/icon/instagram.svg" alt="instagram.png">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="number ">
+                            <a href="tel:+380970047875">
+                                <p class="icon-receiver"></p>
+                            </a>
+                            <a href="tel:+380970047875">
+                                <p class="phone"><span>+38</span>(097)<spa>004-78-75</spa>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="border-button block">
+                        <button class="button " onclick="openForm()">Записатися на консультацію</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--"MainNutritionist end"-->
+
+        <!--"AboutMe start"-->
+        <section id="aboutMe">
+            <div class="about-wrap-mb">
+                <h2>Про мене</h2>
+                <div class="photo-section-wrapper">
+                    <img class="main-photo" src="./src/images/about-me/about-photo.jpg" alt="Nutritionist's photo" />
+                    <div class="icons-container">
+                        <div class="icon-item">
+                            <i class="icon-certificate"></i>
+                            <p>сертифікат міжнародного стандарту ISO 9001</p>
+                        </div>
+                        <div class="icon-item">
+                            <img src="./src/images/about-me/icon-ten-years-mb.svg" alt="Ten years icon">
+                            <p>роботи у сфері фітнесу</p>
+                        </div>
+                        <div class="icon-item">
+                            <i class="icon-bodyshape"></i>
+                            <p>зі мною можна схуднути на 50кг</p>
+                        </div>
+                        <div class="icon-item">
+                            <i class="icon-training"></i>
+                            <p>тренування</p>
+                        </div>
+                        <div class="icon-item">
+                            <i class="icon-recipes"></i>
+                            <p>рецепти</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-section-wrapper">
+                    <p>Мене звати Аліна, і я можу стати твоїм нутриціологом, провідником до здорового
+                        харчування. Мені 33 р., і я маю 10 років практики і досвіду роботи з жінками,
+                        чоловіками та дітьми. Зі мною схудло понад 5000 людей. Найбільша скинута вага - 40
+                        кг. <br>
+                        Також я — мама, і на власному досвіді показую, як привити здорове відношення до їжі
+                        дітям. До народження дитини я була власницею жіночого фітнес-клубу, але зараз
+                        повністю перейшла в онлайн супровід......</p>
+                    <a class="about-open-modal-btn" id="aboutOpenModalBtn" data-bs-toggle="modal"
+                        data-bs-target="#aboutModal">Читати більше</a>
+                </div>
+                <!-- About modal start-->
+                <div class="modal fade" id="aboutModal" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                                <h3>Про мене</h3>
+                                <p>Мене звати Аліна, і я можу стати твоїм нутриціологом, провідником до здорового
+                                    харчування. <br>Мені 33 р., і я маю 10 років практики і досвіду роботи з жінками,
+                                    чоловіками та дітьми. Зі мною схудло понад 5000 людей. Найбільша скинута вага - 40
+                                    кг. <br>
+                                    Також я — мама, і на власному досвіді показую, як привити здорове відношення до їжі
+                                    дітям. <br>До народження дитини я була власницею жіночого фітнес-клубу, але зараз
+                                    повністю перейшла в онлайн супровід. <br>Кожного року проходжу підвищення
+                                    кваліфікації та оновлюю сертифікати нутриціолога. <br>Сертифікат, яким я володію,
+                                    відноситься до міжнародного стандарту і має сертифікацію ISO 9001. Нутриціологія —
+                                    дуже цікава наука, яка кожного року все більше вивчається.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- About modal end-->
+            </div>
+
+            <div class="about-wrap-dt">
+                <div class="main-info">
+                    <img class="main-photo-dt" src="./src/images/about-me/about-photo.jpg" alt="Nutritionist's photo">
+                    <i class="icon-stamp"></i>
+                    <div class="main-text-dt">
+                        <h2>Про мене</h2>
+                        <div class="text-section-wrapper-dt">
+                            <p>Мене звати Аліна, і я можу стати твоїм нутриціологом, провідником до здорового
+                                харчування. <br>Мені 33 р., і я маю 10 років практики і досвіду роботи з жінками,
+                                чоловіками та дітьми. Зі мною схудло понад 5000 людей. Найбільша скинута вага - 40
+                                кг. <br>
+                                Також я — мама, і на власному досвіді показую, як привити здорове відношення до їжі
+                                дітям. <br>До народження дитини я була власницею жіночого фітнес-клубу, але зараз
+                                повністю перейшла в онлайн супровід. <br>Кожного року проходжу підвищення
+                                кваліфікації та оновлюю сертифікати нутриціолога. <br>Сертифікат, яким я володію,
+                                відноситься до міжнародного стандарту і має сертифікацію ISO 9001. Нутриціологія —
+                                дуже цікава наука, яка кожного року все більше вивчається.</p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="icons-container-dt">
+                    <div class="icon-item-dt">
+                        <i class="icon-certificate"></i>
+                        <p>сертифікат міжнародного<br> стандарту ISO 9001</p>
+                    </div>
+                    <div class="icon-item-dt">
+                        <i class="icon-ten-years-dt"></i>
+                        <p>роботи<br> у сфері фітнесу</p>
+                    </div>
+                    <div class="icon-item-dt">
+                        <i class="icon-bodyshape"></i>
+                        <p>зі мною можна<br> схуднути на 50кг</p>
+                    </div>
+                    <div class="icon-item-dt">
+                        <i class="icon-training"></i>
+                        <p>тренування</p>
+                    </div>
+                    <div class="icon-item-dt">
+                        <i class="icon-recipes"></i>
+                        <p>рецепти</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--"AboutMe end"-->
+
+        <!--"instagram gallery (plugin) start"-->
+        <section id="instagramGallery">
+            <div id="widbox" style="width: 100%; height: 100%;" data-widbox-widget-id="Hpo2ZgNKCiYpeePyH7BK"></div>
+        </section>
+        <!--"instagram gallery (plugin) end"-->
+
+        <!--"AboutTheMenuForTheDay start"-->
+        <section id="aboutTheMenuForTheDay">
+            <div class="bacgraundmenu">
+                <h2 class="title-h2">Пробне меню на день</h2>
+                <div class="aboutTheMenu">
+                    <div class="img">
+                        <img class="salad-img" src="./src/images/aboutTheMenu/salad.jpg" alt="There is salad">
+                    </div>
+                    <div class="title-text">
+                        <div class="text-block">
+                            <div class="img-block">
+                                <img class="img-group" src="./src/images/aboutTheMenu/Group.svg" alt="Group.svg">
+                                <h2 class="snidanoc">Сніданок</h2>
+                            </div>
+                            <div class="text-one">
+                                <p class="text-padding">Омлет:</p>
+                                <div class="title-description">
+                                    <ul>
+                                        <li>Яйце - 1 шт. + молоко - 50 мл + броколі/зелений горошок - 100 г;</li>
+                                        <li>Насіння чіа/льону - 1 ч.л., сіль, перець до смаку;</li>
+                                        <li>Подаємо з хлібцями - 30 г;</li>
+                                        <li>Випиваємо чай чи каву - 10 г.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-block">
+                            <div class="img-block">
+                                <img class="img-group img-group-two" src="./src/images/aboutTheMenu/Group.svg"
+                                    alt="Group.svg">
+                                <h2 class="perekus">Перекус</h2>
+                            </div>
+                            <div class="text-two">
+                                <div class="title-description">
+                                    <ul>
+                                        <li>Кефір 2,5% - 200 мл, за бажанням додати подріблену зелень.</li>
+                                    </ul>
+                                </div>
+                                <p class="text-padding">
+                                    Салат:
+                                </p>
+                                <div class="title-description">
+                                    <ul>
+                                        <li>Морква сира - 60 г, яблуко - 50 г;</li>
+                                        <li>Горіх волоський - 7 г;</li>
+                                        <li>Салат заправити йогуртом - 2 ст.л.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-block">
+                            <div class="img-block">
+                                <img class="img-group" src="./src/images/aboutTheMenu/Group.svg" alt="Group.svg">
+                                <h2>Обід</h2>
+                            </div>
+                            <div class="text-three">
+                                <div class="title-description">
+                                    <ul>
+                                        <li>Риба (хек, минтай, тріска) запечена/відварена - 120 г;</li>
+                                        <li>Відварена перлова каша - 150 г у готовому вигляді.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-block">
+                            <div class="img-block">
+                                <img class="img-group" src="./src/images/aboutTheMenu/Group.svg" alt="Group.svg">
+                                <h2>Вечеря</h2>
+                            </div>
+                            <div class="text-four">
+                                <div class="title-description">
+                                    <ul>
+                                        <li>Кефір 2,5% - 200 мл;</li>
+                                        <li>Ягоди - 150 г;</li>
+                                        <li>Насіння льону/чіа - 15 г.<br>Всі інгредієнти збити у блендері.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-button block">
+                            <button class="button" onclick="openForm()">Записатися на консультацію</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--"AboutTheMenuForTheDay end"-->
+
+        <!--"training start"-->
+        <section id="training">
+            <h2>Тренування</h2>
+            <div class="training-swiper-container">
+                <div class="swiper-buttons-wrapper">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div class="swiper trainingMainSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <iframe class="video" src="https://www.youtube.com/embed/9o0so0Ul0ho?si=zbWCmtfhWFusH1Z1"
+                                frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="swiper-slide">
+                            <iframe class="video" src="https://www.youtube.com/embed/TKSRksh1hU0?si=RYg0sCTpLBVbf_Y7"
+                                frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="swiper-slide">
+                            <iframe class="video" src="https://www.youtube.com/embed/lncwbwayWg0?si=L9HR0gO4k64wKewc"
+                                frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="swiper-slide">
+                            <iframe class="video" src="https://www.youtube.com/embed/dI_SE_kMTv0?si=KoOjcc8rmnQ8ZQ9t"
+                                frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="swiper-slide">
+                            <iframe class="video" src="https://www.youtube.com/embed/fmfGMt8CeLM?si=k1H3DVo-Gin_Rjsb"
+                                frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div thumbsSlider="" class="swiper trainingThumbSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./src/images/training/thumb1.jpg" alt="Video thumbnail" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./src/images/training/thumb2.jpg" alt="Video thumbnail" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./src/images/training/thumb3.jpg" alt="Video thumbnail" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./src/images/training/thumb4.jpg" alt="Video thumbnail" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./src/images/training/thumb5.jpg" alt="Video thumbnail" />
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <!--"training end"-->
+
+        <!--"TheResultsOfMyClients start"-->
+        <section id="theResultsOfMyClients">
+            <div class="title-text">
+                <h3>Результати моїх клієнтів</h3>
+            </div>
+            <!-- Swiper -->
+            <div class="photo-swiper">
+                <div class="swiper photoSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./src/images/theResultsOfMyClients/foto_1.jpg" alt="There is a photo with client">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./src/images/theResultsOfMyClients/foto_2.jpg" alt="There is a photo with client">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./src/images/theResultsOfMyClients/foto_3.jpg" alt="There is a photo with client">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./src/images/theResultsOfMyClients/foto_4.jpg" alt="There is a photo with client">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./src/images/theResultsOfMyClients/foto_5.jpg" alt="There is a photo with client">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./src/images/theResultsOfMyClients/foto_6.jpg" alt="There is a photo with client">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./src/images/theResultsOfMyClients/foto_7.jpg" alt="There is a photo with client">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./src/images/theResultsOfMyClients/foto_8.jpg" alt="There is a photo with client">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./src/images/theResultsOfMyClients/foto_9.jpg" alt="There is a photo with client">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./src/images/theResultsOfMyClients/foto_10.jpg"
+                                alt="There is a photo with client">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <!--"TheResultsOfMyClients end"-->
+
+        <!--"contacts start"-->
+        <section id="contacts">
+            <h2>Контакти</h2>
+            <div class="contacts-container">
+                <div class="form-container">
+                    <p class="form-text">У Вас є запитання щодо дієти та тренувань?</p>
+                    <p class="form-text">Я з радістю відповім на Ваші запитання</p>
+                    <form class="registration-form" accept-charset="utf-8">
+                        <div class="input-wrapper input-wrapper-first">
+                            <input type="text" class="input-name" name="first_name" placeholder="Імʼя*" value="">
+                            <p class="error-text"></p>
+                        </div>
+                        <div class="input-wrapper input-wrapper-second">
+                            <input type="tel" class="phone-number" name="phone" placeholder="Телефон*" value="">
+                            <p class="error-text"></p>
+                        </div>
+                        <div class="border-button block">
+                            <button class="check-form button" type="submit">Записатися на консультацію</button>
+                        </div>
+                        <input type="hidden" name="organization_id" value="114">
+                    </form>
+                </div>
+                <div class="social-container">
+                    <div class="photo-wrap">
+                        <img src="./src/images/contacts/contacts-photo.webp" class="contacts-photo"
+                            alt="Woman with flowers" />
+                        <i class="icon-stamp"></i>
+                    </div>
+                    <div class="social">
+                        <a class="social-item" href="https://t.me/share/url?url=https://nutritionist.intita.com/"
+                            target="_blank">
+                            <div class="telegram-wrap">
+                                <img src="./src/images/icon/telegram.svg" alt="Telegram icon">
+                            </div>
+                        </a>
+                        <a class="social-item" href="https://www.facebook.com/alinaprichepa" target="_blank">
+                            <div class="facebook-wrap">
+                                <img src="./src/images/icon/facebook.svg" alt="Viber icon">
+                            </div>
+                        </a>
+                        <a class="social-item" href="https://www.instagram.com/alina_prichepa/" target="_blank">
+                            <div class="instagram-wrap">
+                                <img src="./src/images/icon/instagram.svg" alt="Instagram icon">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-details">
+                <a href="tel:+380970047875">
+                    <div class="contact-details-item ">
+                        <i class="icon-call"></i>
+                        <p class="phone">+38(097) 004-78-75</p>
+                    </div>
+                </a>
+                <a href="mailto:li.prich9@gmail.com">
+                    <div class="contact-details-item">
+                        <i class="icon-envelope"></i>
+                        <p class="email">li.prich9@gmail.com</p>
+                    </div>
+                </a>
+            </div>
+            <div class="logo-container">
+                <a href="./developers.html"><img src="./src/images/footer/Logo.svg" alt="Logo" /></a>
+                <a href="./developers.html">
+                    <p>Розроблено студентами<br> Вінницької ІТ-Академії 2024</p>
+                </a>
+            </div>
+            <a href="#" class="scrollup">
+                <div class="outer-circle">
+                    <div class="inner-circle">
+                        <i class="icon-arrow"></i>
+                    </div>
+                </div>
+            </a>
+        </section>
+        <!--"contacts end"-->
+
+        <!--"form window start"-->
+        <section id="modalWindow">
+            <div id="form-window">
+                <div class="window-top">
+                    <button id="close-form-window" type="button">
+                        <img src="src/images/openwindow/close.png" alt="close">
+                    </button>
+                </div>
+                <form class="registration-form" accept-charset="utf-8">
+                    <div class="input-wrapper">
+                        <input class="input-name" maxlength="30" type="text" name="first_name" placeholder="Імʼя*"
+                            value="">
+                        <p class="error-text"></p>
+                    </div>
+                    <div class="input-wrapper">
+                        <input class="phone-number" type="text" name="phone" placeholder="Телефон*" value="">
+                        <p class="error-text"></p>
+                    </div>
+                    <div class="border-button block">
+                        <button class="check-form button" type="submit">
+                            <p>Записатися на консультацію</p>
+                        </button>
+                    </div>
+                    <input type="hidden" name="organization_id" value="114">
+                </form>
+            </div>
+            <div id="second-window">
+                <div class="window-top">
+                    <button id="close-second-window" type="button">
+                        <img src="src/images/openwindow/close.png" alt="close">
+                    </button>
+                </div>
+                <div class="some-text index-modal">
+                    <p></p>
+                    <span class="form-name-content">Ми зателефонуєм Вам найближчим часом!</span>
+                </div>
+            </div>
+        </section>
+        <!--form window end-->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+    <!-- recaptcha -->
+    <script type="text/javascript" async=""
+        src="https://www.gstatic.com/recaptcha/releases/gEr-ODersURoIfof1hiDm7R5/recaptcha__ru.js"
+        crossorigin="anonymous"
+        integrity="sha384-TLQJmdPnLiPAQT4yetwoOrytOZ6gFBz1x2lmoy5A/z26Q7wBq8QWOoxzSlcobUUY"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcwRRUaAAAAADavxcmw5ShOEUt1xMBmRAcPf6QP"></script>
+    <!--instagram start-->
+    <script src="https://widbox.sfo3.cdn.digitaloceanspaces.com/scripts/widbox.min.js" defer></script>
+    <!--instagram end-->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="src/js/script.js"></script>
+</body>
+
+</html>
