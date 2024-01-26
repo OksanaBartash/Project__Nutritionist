@@ -9,7 +9,8 @@ My contributions to this site include:
 
    * Loader - visible during the site's loading process.
    * Header - made with links to various sections of the site.
-   * Burger-menu - featuring links to all sections of the site, capable of opening and closing with a click (only for tablet and mobile versions). Includes social media buttons and a language switch.
+   * Burger-menu - featuring links to all sections of the site, capable of opening and closing with a click (only for tablet and mobile versions).
+     Includes social media buttons and a language switch.
    * "The results of my clients" Block: with clients' results and their photos. I made this block with Swiper.
    * Made page-404.
    * Made page-Developers.
